@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">EduBot Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link " href="./About.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link " href="./Register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Browse our most popular programs</p>
+            <a href="./Register.html" class="btn btn-primary mt-3">Get Started</a>
+        </div>
+    </header>
+
+    <section class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./images1/Без названия.jpg" class="card-img-top" alt="Frontend Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Frontend Development</h5>
+                        <p class="card-text">HTML, CSS, JavaScript, Bootstrap, and React</p>
+                        <span class="badge bg-success">Beginner</span>
+                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                            data-bs-target="#courseModal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./images1/Без названия (4).jpg" class="card-img-top" alt="Frontend Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Bakend with Python & Django</h5>
+                        <p class="card-text">Learn how to build powerful APIs and apps</p>
+                        <span class="badge bg-warning text-dark">Intermediate</span>
+                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                            data-bs-target="#course2Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="./images1/Без названия (5).jpg" class="card-img-top" alt="Frontend Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Intro to AI & Machine Learning</h5>
+                        <p class="card-text">Get started with AI tools and Python basics</p>
+                        <span class="badge bg-info text-dark">Beginner</span>
+                        <button class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                            data-bs-target="#course3Modal">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Modal Cards -->
+    <div class="modal fade" id="courseModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Frontend Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Learn how to build stunning websites using modern technologies like HTML, CSS,
+                    JavaScript, and
+                    React.
+                </div>
+                <div class="modal-footer">
+                    <a href="Register.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="course2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bakend with Python & Django</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Learn how to build powerful APIs and apps
+                    React.
+                </div>
+                <div class="modal-footer">
+                    <a href="Register.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="course3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Intro to AI & Machine Learning</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">Get started with AI tools and Python basics</div>
+                <div class="modal-footer">
+                    <a href="Register.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <p>&copy; 2025 EduBot Learning. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
